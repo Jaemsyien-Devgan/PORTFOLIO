@@ -1,14 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900;&display=swap');
 *,html,body{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+
 }
 .container{
     position: sticky;
     display: flex;
     width: 100%;
     height: 100vh;
-    background-color: lightslategrey;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 .wrapper{
     align-items: center;
@@ -18,7 +28,7 @@
     display: flex;
     width: 100%;
     height: 60px;
-    background-color: #222;
+    background-color: var(--bg-color);
     box-shadow: 0 7px 15px 0 rgba(0,0,0,0.5);
 }
 .logo{
@@ -45,7 +55,7 @@
     font-weight: 700;
 }
 .Nama-belakang{
-    color: crimson;
+    color: var(--main-color);
     padding-left: 4px;
     font-weight: 400;
 }
@@ -59,27 +69,33 @@
     padding: 0%;
 }
 .Navbar > li > a{
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
-    font-size: 17px;
-    font-weight: 700;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 35px;
 }
 .Navbar > li > a:hover{
-    background-color: crimson;
+    color: var(--main-color);
     transition: all 0.3s ease-in-out;
-    border-radius: 8px;
+    border-radius: 100px;
 }
 .Navbar > a > img{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50px;
-    padding-left: 50px;
+    padding-left: 80px;
     padding-right: 50px;
 }
 .Navbar > a > img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
+    color: var(--main-color);
+}
+.Navbar > li > a.active{
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 3rem;
+    color: var(--text-color);
+    display: none;
 }
