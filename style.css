@@ -1,0 +1,85 @@
+*,html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    position: sticky;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: lightslategrey;
+}
+.wrapper{
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #222;
+    box-shadow: 0 7px 15px 0 rgba(0,0,0,0.5);
+}
+.logo{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    font-size: 1.3em;
+    padding-left: 100px;
+    cursor: pointer;
+}
+.Nama-depan, .Nama-belakang {
+    display: inline;
+}
+.logo a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.Nama-depan{
+    color: white;
+    font-weight: 700;
+}
+.Nama-belakang{
+    color: crimson;
+    padding-left: 4px;
+    font-weight: 400;
+}
+.Navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Navbar > li{
+    list-style-type: none;
+    padding: 0%;
+}
+.Navbar > li > a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Navbar > li > a:hover{
+    background-color: crimson;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+}
+.Navbar > a > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.Navbar > a > img:hover{
+    transform: scale(1.2);
+}
