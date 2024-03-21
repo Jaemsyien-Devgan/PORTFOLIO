@@ -42,6 +42,10 @@ body{
     transition: .3s;
     cursor: pointer;
 }
+.logo:hover{
+    color: var(--main-color);
+    transition: .3s ease;
+}
 .navbar a{
     font-size: 1.7rem;
     color: var(--text-color);
@@ -83,13 +87,23 @@ section {
 }
 .home-img img{
     width: 35vw;
+    padding: 40px;
+    padding-left: 80px;
+    background: transparent;
+}
+.home-img img:hover{
+    transform: scale(1.05);
+    transition: .2s ease;
+    cursor: pointer;
 }
 span {
     color: #0ef;
 }
 .home-content p{
     font-size: 1.6rem;
-    padding-right: 20px;
+    font-weight: 500;
+    padding-right: 0px;
+    text-align: justify;
 }
 .social-media a{
     display: inline-flex;
